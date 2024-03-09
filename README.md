@@ -1,5 +1,5 @@
 # ControlCap
-Controllable Dense Captioner with Multimodal Embedding Bridging
+ControlCap: Controllable Region-level Captioning
 
 The paper is under review and the code will be released.
 
