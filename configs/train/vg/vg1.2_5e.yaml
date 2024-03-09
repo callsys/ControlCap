@@ -1,0 +1,14 @@
+base: ["configs/base/runs/train.yaml",
+       "configs/base/models/controlcap_flant5xl.yaml",
+       "configs/base/datasets/vg/vg1.2.yaml",
+]
+
+model:
+  finetune_llm: False
+
+run:
+  batch_size_train: 64
+  output_dir: "output/train/vg1.2_5e"
+  eval_dataset_name: "vg1.2"
+
+

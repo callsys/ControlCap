@@ -1,0 +1,24 @@
+datasets:
+  vg1.3:
+    vis_processor:
+      train:
+        name: "reem"
+        image_size: 224
+      eval:
+        name: "reem"
+        image_size: 224
+    text_processor:
+      train:
+        name: "blip_caption"
+      eval:
+        name: "blip_caption"
+    build_info:
+      with_seg: False
+      max_imgs: 1e7
+      max_objs: 1e7
+      obj_lvl: True
+      cap_type: [ "dense" ]
+      tag_list: "reem/commom/tag_parser/ram_tag_list.txt"
+      annotations:
+        train: [ ]
+        val: [ "data/vg/annotations/reem/vg1.2/test_small.json" ]

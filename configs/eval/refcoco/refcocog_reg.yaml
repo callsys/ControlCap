@@ -1,0 +1,9 @@
+base: ["configs/base/runs/eval.yaml",
+       "configs/base/models/controlcap_vicuna7b.yaml",
+       "configs/base/datasets/refcoco/refcocog.yaml",
+]
+
+run:
+  output_dir: "output/eval/refcoco"
+  eval_dataset_name: "refcocog"
+  load_ckpt_path: "/media/Disk1/ZhaoYuzhong/zhaoyuzhong/zyz/code/Reem/output/train/reem_union_reem_1e/20240229184/checkpoint_0.pth" #

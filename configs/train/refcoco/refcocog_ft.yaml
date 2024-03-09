@@ -1,0 +1,15 @@
+base: ["configs/base/runs/train.yaml",
+       "configs/base/models/controlcap_flant5xl.yaml",
+       "configs/base/datasets/refcoco/refcocog.yaml",
+]
+
+model:
+  finetune_llm: True
+
+run:
+  batch_size_train: 48
+  max_epoch: 5
+  output_dir: "output/train/refcocog_ft"
+  eval_dataset_name: "refcocog"
+  load_ckpt_path: "/media/Disk1/ZhaoYuzhong/zhaoyuzhong/zyz/code/Reem/output/train/controlcap2_union_5e/20240302013/checkpoint_4.pth"
+  init_lr: 1e-4
