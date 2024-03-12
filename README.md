@@ -16,7 +16,7 @@ This is the official implementaion of paper [***ControlCap: Controllable Region-
 The code is being cleaned up and the finished code will be updated in the future.
 
 ## 1. Contents
-- Generative Prompt Model for Weakly Supervised Object Localization
+- ControlCap: Controllable Region-level Captioning
   - [1. Contents](#1-contents)
   - [2. Introduction](#2-introduction)
   - [3. Results](#3-results)
