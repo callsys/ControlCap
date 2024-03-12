@@ -1,9 +1,0 @@
-base: ["configs/base/runs/eval.yaml",
-       "configs/base/models/controlcap_vicuna7b.yaml",
-       "configs/base/datasets/vg/vg_reg.yaml",
-]
-
-run:
-  output_dir: "output/eval/vg1.2"
-  eval_dataset_name: "vg_reg"
-  load_ckpt_path: "output/train/baseline_union_reem_1e/20240110230/checkpoint_0.pth"
