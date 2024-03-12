@@ -10,7 +10,7 @@ from controlcap.tasks import *
 from controlcap.datasets import *
 from controlcap.models import *
 from controlcap.runners import *
-from controlcap.commom.config import Config
+from controlcap.common.config import Config
 
 import lavis.tasks as tasks
 from lavis.common.dist_utils import get_rank, init_distributed_mode

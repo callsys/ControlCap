@@ -7,11 +7,11 @@ import torch
 import torch.backends.cudnn as cudnn
 
 # imports modules for registration
-from reem.tasks import *
-from reem.datasets import *
-from reem.models import *
-from reem.runners import *
-from reem.commom.config import Config
+from controlcap.tasks import *
+from controlcap.datasets import *
+from controlcap.models import *
+from controlcap.runners import *
+from controlcap.common.config import Config
 
 import lavis.tasks as tasks
 from lavis.common.dist_utils import get_rank, init_distributed_mode
