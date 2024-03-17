@@ -1,8 +1,8 @@
- | Dataset & Files                        | Download                                                               | Description                                                                 |
+ | Dataset & Files                        | Description                                                               | Download                                                                |
   | -------------------------------------- | ---------------------------------------------------------------------- | --------------------------------------------------------------------- |
-  | Visual Genome        | [Official](https://homes.cs.washington.edu/~ranjay/visualgenome/api.html)                        | Visual Genome dataset  
-| MSCOCO 2014          | [Official](https://cocodataset.org/#home)                        | MSCOCO 2014 dataset  
-  | data/          | [OneDrive](https://mailsucasaccn-my.sharepoint.com/personal/zhaoyuzhong20_mails_ucas_ac_cn/_layouts/15/onedrive.aspx?id=%2Fpersonal%2Fzhaoyuzhong20%5Fmails%5Fucas%5Fac%5Fcn%2FDocuments%2FControlCap&view=0)                        | Converted annotations for VG and RefCOCOg                |
+  | Visual Genome  | Visual Genome dataset  | [Official](https://homes.cs.washington.edu/~ranjay/visualgenome/api.html)   
+| MSCOCO 2014  | MSCOCO 2014 dataset        | [Official](https://cocodataset.org/#home) 
+  | data/          | Converted annotations for VG and RefCOCOg | [OneDrive](https://mailsucasaccn-my.sharepoint.com/personal/zhaoyuzhong20_mails_ucas_ac_cn/_layouts/15/onedrive.aspx?id=%2Fpersonal%2Fzhaoyuzhong20%5Fmails%5Fucas%5Fac%5Fcn%2FDocuments%2FControlCap&view=0)                 |
 
   | Models       | Description       | VG V1.2 (Dense captioning) | VG (Referring expression generation)  | RefCOCOg (Referring expression generation) |
   | -----------  | ----------------- | -- | --------- | -------------------------- |
