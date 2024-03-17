@@ -7,4 +7,4 @@ pip install SceneGraphParser
 python -m spacy download en
 pip install textblob
  ```
-Download [meteor](https://mailsucasaccn-my.sharepoint.com/:f:/g/personal/zhaoyuzhong20_mails_ucas_ac_cn/Es5tiSmgeyBEtPAFBwJN8RABZTkcA0LlymyURt4lsR4lKg?e=QaSVvu) and place it in `controlcap/common/evaluation/meteor`.
+To evaluate the dense captioning performance on Visual Genome, please download [meteor](https://mailsucasaccn-my.sharepoint.com/:f:/g/personal/zhaoyuzhong20_mails_ucas_ac_cn/Es5tiSmgeyBEtPAFBwJN8RABZTkcA0LlymyURt4lsR4lKg?e=QaSVvu) and place it in `controlcap/common/evaluation/meteor`.
