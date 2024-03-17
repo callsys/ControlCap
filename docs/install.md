@@ -1,4 +1,4 @@
-To setup the environment of GenPromp, we use `conda` to manage our dependencies. Our developers use `CUDA 11.7` to do experiments. Run the following commands to install GenPromp:
+To setup the environment of ControlCap, we use `conda` to manage our dependencies. Our developers use `CUDA 11.7` to do experiments. Run the following commands to install GenPromp:
  ```
 conda create -n controlcap python=3.8 -y && conda activate controlcap
 pip install --upgrade pip
