@@ -9,7 +9,7 @@ model:
   tag_thr: 0.8
 
 run:
-  batch_size_train: 2
+  batch_size_train: 64
   max_epoch: 5
   output_dir: "output/train/vgcoco_5e"
   eval_dataset_name: "vgcoco"
