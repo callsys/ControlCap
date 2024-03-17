@@ -1,4 +1,4 @@
- | Dataset & Files                        | Description                                                               | Download                                                                |
+ | Dataset                        | Description                                                               | Download                                                                |
   | -------------------------------------- | ---------------------------------------------------------------------- | --------------------------------------------------------------------- |
   | Visual Genome  | Visual Genome dataset, put images into `data/vg/images`  | [Official](https://homes.cs.washington.edu/~ranjay/visualgenome/api.html)   
 | MSCOCO 2014  | MSCOCO 2014 dataset, put images into `data/refcoco/images`       | [Official](https://cocodataset.org/#home) 
