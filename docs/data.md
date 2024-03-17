@@ -42,4 +42,4 @@ The annotations are converted using `bash scripts/data.sh`, the original annotat
 
 1. [annotations](https://homes.cs.washington.edu/~ranjay/visualgenome/api.html) of Visual Genome.
 
-2. [test_caption.json](https://drive.google.com/file/d/1zF3UGHU1rvgTujinqJ-hZtrCBVsfsuel/view?usp=sharing) of Glamm.
+2. [test_caption.json](https://drive.google.com/file/d/1zF3UGHU1rvgTujinqJ-hZtrCBVsfsuel/view?usp=sharing) and [mdetr_annotations](https://drive.google.com/file/d/1gvH5ToNtmIr3qz7C9lNi_fDmElwAANsI/view) of Glamm.
