@@ -42,4 +42,4 @@ The annotations are converted using `data.sh`, the original annotations are as f
 
 1. [annotations](https://homes.cs.washington.edu/~ranjay/visualgenome/api.html) of Visual Genome for dense captioning.
 
-2. [test_caption.json](https://drive.google.com/file/d/1zF3UGHU1rvgTujinqJ-hZtrCBVsfsuel/view?usp=sharing) and [mdetr_annotations](https://drive.google.com/file/d/1gvH5ToNtmIr3qz7C9lNi_fDmElwAANsI/view) of Glamm for referring expression generation.
+2. [test_caption.json](https://drive.google.com/file/d/1zF3UGHU1rvgTujinqJ-hZtrCBVsfsuel/view?usp=sharing) and [mdetr_annotations](https://drive.google.com/file/d/1gvH5ToNtmIr3qz7C9lNi_fDmElwAANsI/view) of GlaMM for evaluating referring expression generation.
