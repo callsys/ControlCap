@@ -2,7 +2,7 @@
 
 ls
 
-ckpt="/Workspace/ZhaoYuzhong/ControlCap/output/train/vg_refcocog_5e/20240316102/checkpoint_4.pth"
+ckpt=$1
 echo $ckpt
 
 # eval controlcap on vg1.2
