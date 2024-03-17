@@ -33,14 +33,14 @@ Region-level captioning is challenged by the caption degeneration issue, which r
 
 ## 4. Get Start
 
-- [**Installation**](./docs/install.md): Installation.
+- [**Installation**](./docs/install.md).
 
-- [**Data**](./docs/data.md): Data preparation.
+- [**Data**](./docs/data.md).
 
-- [**Training and Evaluation**](./docs/train_and_eval.md): ControlCap training and evaluation.
+- [**Training and Evaluation**](./docs/train_and_eval.md).
 
 
-- [**Demo**](./docs/demo.md): ControlCap demo.
+- [**Demo**](./docs/demo.md).
 
 
 ## 5. Contacts
