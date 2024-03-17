@@ -1,0 +1,11 @@
+base: ["configs/base/runs/eval.yaml",
+       "configs/base/models/controlcap_flant5xl.yaml",
+       "configs/base/datasets/vg_pred_bboxes/vg1.0.yaml",
+]
+
+run:
+  batch_size_eval: 2
+  output_dir: "output/eval/vg1.0_grit"
+  eval_dataset_name: "vg1.0"
+#  load_ckpt_path: "/home/ZhaoYuzhong/zyz/code/RRecog/output/train/vgcoco_rrecog/20231112043/checkpoint_4.pth" # 41.5
+  load_ckpt_path: "/media/Disk1/ZhaoYuzhong/zhaoyuzhong/zyz/code/Reem/output/train/controlcap2_union_5e/20240302013/checkpoint_4.pth" # 42.0

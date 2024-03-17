@@ -1,0 +1,14 @@
+base: ["configs/base/runs/eval.yaml",
+       "configs/base/models/controlcap_flant5xl.yaml",
+       "configs/base/datasets/vg/vg_reg.yaml",
+]
+
+model:
+  tag_thr: 0.79
+  first_word_control: False
+  num_beams: 2
+
+run:
+  batch_size_eval: 64
+  output_dir: "output/eval/vg1.2"
+  eval_dataset_name: "vg_reg"

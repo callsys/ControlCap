@@ -1,0 +1,39 @@
+model:
+  arch: controlcap_t5
+
+  # pretrained weights
+  pretrained: "https://storage.googleapis.com/sfr-vision-language-research/LAVIS/models/BLIP2/blip2_pretrained_flant5xl.pth"
+  finetune_llm: False
+
+  # contextual visual embedding
+  vit_model: "eva_clip_g"
+  img_size: 224
+  drop_path_rate: 0
+  use_grad_checkpoint: False
+  vit_precision: "fp16"
+  freeze_vit: True
+
+  # tagging head
+  tag_bert_config: "controlcap/models/tagging_heads/tag_bert_config.json"
+  tag_list: "controlcap/common/tagging/ram_tag_list.txt"
+
+  # align network
+  num_query_token: 32
+
+  # large language model
+  t5_model: "google/flan-t5-xl"
+
+#  # inference
+  tag_thr: 0.7
+  first_word_control: False
+  apply_lemmatizer: False
+  max_txt_len: 32
+  num_return_sequences: 1
+  do_sample: False
+  num_beams: 2
+  max_new_tokens: 20
+  min_length: 1
+  length_penalty: 0
+  repetition_penalty: 1.5
+  top_p: 0.9
+  temperature: 1

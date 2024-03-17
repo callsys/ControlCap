@@ -1,0 +1,15 @@
+base: ["configs/base/runs/train.yaml",
+       "configs/base/models/controlcap_flant5xl.yaml",
+       "configs/base/datasets/refcoco/refcocog.yaml",
+]
+
+model:
+  tag_thr: 0.76
+
+run:
+  batch_size_train: 64
+  max_epoch: 3
+  output_dir: "output/train/refcocog_ft"
+  eval_dataset_name: "refcocog"
+  load_ckpt_path: "/Workspace/ZhaoYuzhong/ControlCap/output/train/vg_refcocog_5e/20240316102/checkpoint_4.pth"
+  init_lr: 1e-4
