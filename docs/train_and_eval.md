@@ -18,15 +18,15 @@ bash scripts/train train_vgcoco.sh
 ```
 
 ### 4.4 Evaluation
-Evaluate the dense captioning performance of ControlCap on VG V1.2.
+Evaluating the dense captioning performance of ControlCap on VG V1.2.
 ```
 bash scripts/eval/eval_vg1.2_densecap.sh ckpts/vg1.2_refcocog_5e.pth
 ```
-Evaluate the referring expression generation performance of ControlCap on VG V1.2.
+Evaluating the referring expression generation performance of ControlCap on VG V1.2.
 ```
 bash scripts/eval/eval_vg_reg.sh ckpts/vg1.2_refcocog_5e.pth
 ```
-Evaluate the referring expression generation performance of ControlCap on RefCOCOg.
+Evaluating the referring expression generation performance of ControlCap on RefCOCOg.
 ```
 bash scripts/eval/eval_refcocog_reg.sh ckpts/refcocog_ft.pth
 ```
