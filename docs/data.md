@@ -38,3 +38,6 @@ To train and evaluate ControlCap, download the files in the table and arrange th
       |--train.py
       |--eval.py
 ```
+The annotations are converted using `bash scripts/data.sh`
+
+[test_caption.json](https://drive.google.com/file/d/1zF3UGHU1rvgTujinqJ-hZtrCBVsfsuel/view?usp=sharing) from Glamm.
