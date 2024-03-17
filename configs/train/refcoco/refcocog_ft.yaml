@@ -11,5 +11,4 @@ run:
   max_epoch: 3
   output_dir: "output/train/refcocog_ft"
   eval_dataset_name: "refcocog"
-  load_ckpt_path: "/Workspace/ZhaoYuzhong/ControlCap/output/train/vg_refcocog_5e/20240316102/checkpoint_4.pth"
   init_lr: 1e-4
