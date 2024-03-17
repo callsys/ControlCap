@@ -7,3 +7,4 @@ pip install SceneGraphParser
 python -m spacy download en
 pip install textblob
  ```
+Download [meteor]() and place it in `controlcap/common/evaluation/meteor`.
