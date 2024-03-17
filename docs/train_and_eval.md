@@ -6,7 +6,7 @@ bash scripts/train train_vg1.2_refcocog.sh
 ```
 Finetuning ControlCap on RefCOCOg (Pretrained by VG V1.2 and RefCOCOg).
 ```
-bash scripts/train finetune_refcocog.sh
+bash scripts/train finetune_refcocog.sh ckpts/vg1.2_refcocog_5e.pth
 ```
 Training ControlCap on VG V1.2.
 ```
