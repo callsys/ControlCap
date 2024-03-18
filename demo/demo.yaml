@@ -1,0 +1,25 @@
+base: ["configs/base/runs/eval.yaml",
+       "configs/base/models/controlcap_flant5xl.yaml",
+       "configs/base/datasets/vg/vg_reg.yaml",
+]
+
+model:
+  tag_thr: 0.7
+  first_word_control: False
+  apply_lemmatizer: False
+  max_txt_len: 32
+  num_return_sequences: 1
+  do_sample: False
+  num_beams: 5
+  max_new_tokens: 30
+  min_length: 1
+  length_penalty: 0
+  repetition_penalty: 1.5
+  top_p: 0.9
+  temperature: 1
+
+run:
+  batch_size_eval: 64
+  output_dir: "output/eval/vg1.2"
+  eval_dataset_name: "vg_reg"
+  load_ckpt_path: "/Workspace/ZhaoYuzhong/ControlCap/output/train/vg_refcocog_5e/20240316102/checkpoint_4.pth"
