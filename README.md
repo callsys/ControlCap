@@ -41,7 +41,6 @@ Region-level captioning performance on Visual Genome (VG) and RefCOCOg.
 <img src="assets/result.png" width="50%">
 </div>
 
-
 <div align=center>
 Gradio demo of ControlCap.
 <img src="assets/controlcap_demo.gif" width="98%">
