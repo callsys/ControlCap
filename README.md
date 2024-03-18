@@ -13,11 +13,10 @@ This is the official implementaion of paper [***ControlCap: Controllable Region-
 [![LICENSE](https://img.shields.io/github/license/vasgaowei/ts-cam.svg)](LICENSE)
 </div>
 
-<table>
-  <tr>
-    <td><img src="./demo/controlcap_demo.gif" width="700"></td>
-  </tr>
-</table>
+
+<div align=center>
+<img src="assets/framework.png" width="69%">
+</div>
 
 
 ## 1. Contents
@@ -36,6 +35,14 @@ Region-level captioning is challenged by the caption degeneration issue, which r
 
 ## 3. Results
 
+<div align=center>
+<img src="assets/result.png" width="69%">
+</div>
+
+<div align=center>
+<img src="assets/controlcap_demo.gif" width="69%">
+</div>
+
 ## 4. Get Start
 
 - [**Installation**](./docs/install.md)
@@ -43,7 +50,6 @@ Region-level captioning is challenged by the caption degeneration issue, which r
 - [**Data**](./docs/data.md)
 
 - [**Training and Evaluation**](./docs/train_and_eval.md)
-
 
 - [**Demo**](./docs/demo.md)
 
