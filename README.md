@@ -15,7 +15,6 @@ This is the official implementaion of paper [***ControlCap: Controllable Region-
 
 <table>
   <tr>
-    <td style="text-align: center"><br>Point<br></td>
     <td><img src="./demo/controlcap_demo.gif" width="700"></td>
   </tr>
 </table>
