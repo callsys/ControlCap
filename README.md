@@ -13,6 +13,14 @@ This is the official implementaion of paper [***ControlCap: Controllable Region-
 [![LICENSE](https://img.shields.io/github/license/vasgaowei/ts-cam.svg)](LICENSE)
 </div>
 
+<table>
+  <tr>
+    <td style="text-align: center"><br>Point<br></td>
+    <td><img src="./demo/controlcap_demo.gif" width="700"></td>
+  </tr>
+</table>
+
+
 ## 1. Contents
 - ControlCap: Controllable Region-level Captioning
   - [1. Contents](#1-contents)
