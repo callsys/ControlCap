@@ -55,7 +55,7 @@ If you have any question about our work or this repository, please don't hesitat
 
 ## 6. Acknowledgment
 
-- Part of the code is borrowed from [LAVIS](https://github.com/salesforce/LAVIS), [GlaMM](https://github.com/mbzuai-oryx/groundingLMM), and [RAM](https://github.com/xinyu1205/recognize-anything), we sincerely thank them for their contributions to the community.
+- Part of the code is borrowed from [LAVIS](https://github.com/salesforce/LAVIS), [GlaMM](https://github.com/mbzuai-oryx/groundingLMM), [Osprey](https://github.com/CircleRadon/Osprey/tree/main) and [RAM](https://github.com/xinyu1205/recognize-anything), we sincerely thank them for their contributions to the community.
 
 ## 7. Citation
 
