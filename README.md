@@ -15,7 +15,7 @@ This is the official implementaion of paper [***ControlCap: Controllable Region-
 
 
 <div align=center>
-<img src="assets/framework.png" width="69%">
+<img src="assets/framework.png" width="50%">
 </div>
 
 
@@ -36,11 +36,11 @@ Region-level captioning is challenged by the caption degeneration issue, which r
 ## 3. Results
 
 <div align=center>
-<img src="assets/result.png" width="69%">
+<img src="assets/result.png" width="50%">
 </div>
 
 <div align=center>
-<img src="assets/controlcap_demo.gif" width="69%">
+<img src="assets/controlcap_demo.gif" width="98%">
 </div>
 
 ## 4. Get Start
