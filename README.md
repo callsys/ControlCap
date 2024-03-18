@@ -35,13 +35,15 @@ Region-level captioning is challenged by the caption degeneration issue, which r
 
 ## 3. Results
 
-Region-level captioning performance on Visual Genome (VG) and RefCOCOg.
+
 <div align=center>
+Region-level captioning performance on Visual Genome (VG) and RefCOCOg.
 <img src="assets/result.png" width="50%">
 </div>
 
-Gradio demo of ControlCap.
+
 <div align=center>
+Gradio demo of ControlCap.
 <img src="assets/controlcap_demo.gif" width="98%">
 </div>
 
