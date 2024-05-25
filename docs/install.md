@@ -1,10 +1,10 @@
-To setup the environment of ControlCap, we use `conda` to manage our dependencies. Our developers use `CUDA 11.7` to do experiments. Run the following commands to install GenPromp:
+We use `conda` to manage our dependencies. Our developers use `CUDA 12.1` to do experiments. Run the following commands to to setup the environment of ControlCap:
  ```
-conda create -n controlcap python=3.8 -y && conda activate controlcap
-pip install --upgrade pip
-pip install salesforce-lavis
-pip install SceneGraphParser
-python -m spacy download en
-pip install textblob
+git clone https://github.com/callsys/ControlCap
+cd ControlCap
+
+conda create -n controlcap python=3.8 -y
+conda activate controlcap
+
+bash scripts/setup.sh
  ```
-To evaluate the dense captioning performance on Visual Genome, please download [meteor](https://mailsucasaccn-my.sharepoint.com/:f:/g/personal/zhaoyuzhong20_mails_ucas_ac_cn/Es5tiSmgeyBEtPAFBwJN8RABZTkcA0LlymyURt4lsR4lKg?e=QaSVvu) and place it in `controlcap/common/evaluation/meteor`.
