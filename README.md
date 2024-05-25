@@ -24,7 +24,7 @@ This is the official implementaion of paper [***ControlCap: Controllable Region-
   - [1. Contents](#1-contents)
   - [2. Introduction](#2-introduction)
   - [3. Results](#3-results)
-  - [4. Get Start](#4-get-start)
+  - [4. Code Usage](#4-code-usage)
   - [5. Contacts](#5-contacts)
   - [6. Acknowledgment](#6-acknowledgment)
   - [7. Citation](#7-citation)
@@ -46,11 +46,11 @@ Gradio demo of ControlCap.
 <img src="assets/controlcap_demo.gif" width="98%">
 </div>
 
-## 4. Get Start
+## 4. Code Usage
 
-- [**Installation**](./docs/install.md)
+- [**Environment**](./docs/install.md)
 
-- [**Data**](./docs/data.md)
+- [**Dataset and Checkpoints**](./docs/data.md)
 
 - [**Training and Evaluation**](./docs/train_and_eval.md)
 
