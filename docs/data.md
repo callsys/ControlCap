@@ -7,10 +7,10 @@
 | Pre-trained ControlCap weights and logs (Optional) | `to be uploaded` | [OneDrive](https://mailsucasaccn-my.sharepoint.com/:f:/g/personal/zhaoyuzhong20_mails_ucas_ac_cn/EkLua8BRCwRKq_DE8r9SGYABZWrTS1Rr8VXJNMX5FMHa6Q?e=FX4Tgn) |
   
 
-  | Models       | Description       | VG V1.2 <br>Dense captioning | VG <br>Referring expression generation  | RefCOCOg <br>Referring expression generation |
-  | -----------  | ----------------- | -- | --------- | -------------------------- |
-  | [ControlCap](https://mailsucasaccn-my.sharepoint.com/:u:/g/personal/zhaoyuzhong20_mails_ucas_ac_cn/ESHZeEf0p-5FmH6esN9XZ8MBv_xalVZm4NhPabgg4Wgvvg?e=G8iJ26) | Trained on VG and RefCOCOg for 5 epochs | mAP (44.7) | METEOR (20.5) <br> CIDEr (183.3) | - |
-  | [ControlCap](https://mailsucasaccn-my.sharepoint.com/:u:/g/personal/zhaoyuzhong20_mails_ucas_ac_cn/EQf7kx1AgSBHoLWu1BgWpWoB7JKy-I98Om9EMM1VNFhEkg?e=nauMkF) | Finetuned on RefCOCOg for 3 epochs | - | - | METEOR (17.8) <br> CIDEr (112.8) |
+%  | Models       | Description       | VG V1.2 <br>Dense captioning | VG <br>Referring expression generation  | RefCOCOg <br>Referring expression generation |
+%  | -----------  | ----------------- | -- | --------- | -------------------------- |
+%  | [ControlCap](https://mailsucasaccn-my.sharepoint.com/:u:/g/personal/zhaoyuzhong20_mails_ucas_ac_cn/ESHZeEf0p-5FmH6esN9XZ8MBv_xalVZm4NhPabgg4Wgvvg?e=G8iJ26) | Trained on VG and RefCOCOg for 5 epochs | mAP (44.7) | METEOR (20.5) <br> CIDEr (183.3) | - |
+%  | [ControlCap](https://mailsucasaccn-my.sharepoint.com/:u:/g/personal/zhaoyuzhong20_mails_ucas_ac_cn/EQf7kx1AgSBHoLWu1BgWpWoB7JKy-I98Om9EMM1VNFhEkg?e=nauMkF) | Finetuned on RefCOCOg for 3 epochs | - | - | METEOR (17.8) <br> CIDEr (112.8) |
  
 
 To train and evaluate ControlCap, download the files in the table and arrange the files according to the file tree below. (Uploading)
