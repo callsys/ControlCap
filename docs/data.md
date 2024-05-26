@@ -4,6 +4,15 @@
 | MSCOCO 2014  | MSCOCO 2014 dataset, put images into `data/refcoco/images`       | [Official](https://cocodataset.org/#home) 
   | data/          | Converted annotations for VG and RefCOCOg | [OneDrive](https://mailsucasaccn-my.sharepoint.com/personal/zhaoyuzhong20_mails_ucas_ac_cn/_layouts/15/onedrive.aspx?id=%2Fpersonal%2Fzhaoyuzhong20%5Fmails%5Fucas%5Fac%5Fcn%2FDocuments%2FControlCap&view=0)                 |
 
+
+ | Data                        | Description                                                               | Download                                                                |
+  | -------------------------------------- | ---------------------------------------------------------------------- | --------------------------------------------------------------------- |
+  | Visual Genome  | `ln -s VG/images data/vg/images`  | [Official](https://homes.cs.washington.edu/~ranjay/visualgenome/api.html)   
+| MSCOCO 2014 | `ln -s coco2014/train2014 data/refcoco/images`       | [Official](https://cocodataset.org/#home) |
+  | data/          | Converted annotations for VG and RefCOCOg | [OneDrive](https://mailsucasaccn-my.sharepoint.com/personal/zhaoyuzhong20_mails_ucas_ac_cn/_layouts/15/onedrive.aspx?id=%2Fpersonal%2Fzhaoyuzhong20%5Fmails%5Fucas%5Fac%5Fcn%2FDocuments%2FControlCap&view=0)  |
+| Pre-trained DynRefer weights and logs (Optional) | `mv <your_path>/ckpts/* ckpt/` | [OneDrive](https://mailsucasaccn-my.sharepoint.com/:f:/g/personal/zhaoyuzhong20_mails_ucas_ac_cn/EkLua8BRCwRKq_DE8r9SGYABZWrTS1Rr8VXJNMX5FMHa6Q?e=FX4Tgn) |
+  
+
   | Models       | Description       | VG V1.2 <br>Dense captioning | VG <br>Referring expression generation  | RefCOCOg <br>Referring expression generation |
   | -----------  | ----------------- | -- | --------- | -------------------------- |
   | [ControlCap](https://mailsucasaccn-my.sharepoint.com/:u:/g/personal/zhaoyuzhong20_mails_ucas_ac_cn/ESHZeEf0p-5FmH6esN9XZ8MBv_xalVZm4NhPabgg4Wgvvg?e=G8iJ26) | Trained on VG and RefCOCOg for 5 epochs | mAP (44.7) | METEOR (20.5) <br> CIDEr (183.3) | - |
