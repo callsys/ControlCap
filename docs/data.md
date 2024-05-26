@@ -1,10 +1,3 @@
- | Datasets                        | Description                                                               | Download                                                                |
-  | -------------------------------------- | ---------------------------------------------------------------------- | --------------------------------------------------------------------- |
-  | Visual Genome  | Visual Genome dataset, put images into `data/vg/images`  | [Official](https://homes.cs.washington.edu/~ranjay/visualgenome/api.html)   
-| MSCOCO 2014  | MSCOCO 2014 dataset, put images into `data/refcoco/images`       | [Official](https://cocodataset.org/#home) 
-  | data/          | Converted annotations for VG and RefCOCOg | [OneDrive](https://mailsucasaccn-my.sharepoint.com/personal/zhaoyuzhong20_mails_ucas_ac_cn/_layouts/15/onedrive.aspx?id=%2Fpersonal%2Fzhaoyuzhong20%5Fmails%5Fucas%5Fac%5Fcn%2FDocuments%2FControlCap&view=0)                 |
-
-
  | Data                        | Description                                                               | Download                                                                |
   | -------------------------------------- | ---------------------------------------------------------------------- | --------------------------------------------------------------------- |
   | Visual Genome  | `ln -s VG/images data/vg/images`  | [Official](https://homes.cs.washington.edu/~ranjay/visualgenome/api.html)   
