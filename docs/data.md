@@ -4,7 +4,7 @@
   | MSCOCO 2014 | `ln -s coco2014/images data/refcoco/images`       | [Official](https://cocodataset.org/#home) |
   | Converted annotations | `mv <your_path>/data/* ControlCap/data` | [OneDrive](https://mailsucasaccn-my.sharepoint.com/personal/zhaoyuzhong20_mails_ucas_ac_cn/_layouts/15/onedrive.aspx?id=%2Fpersonal%2Fzhaoyuzhong20%5Fmails%5Fucas%5Fac%5Fcn%2FDocuments%2FControlCap&view=0)  |
   | Meteor package | `unzip meteor.zip -d controlcap/common/evaluation/` | [OneDrive](https://mailsucasaccn-my.sharepoint.com/personal/zhaoyuzhong20_mails_ucas_ac_cn/_layouts/15/onedrive.aspx?id=%2Fpersonal%2Fzhaoyuzhong20%5Fmails%5Fucas%5Fac%5Fcn%2FDocuments%2FControlCap&view=0) |
-| Pre-trained ControlCap weights and logs (Optional) | `to be uploaded` | [OneDrive](https://mailsucasaccn-my.sharepoint.com/personal/zhaoyuzhong20_mails_ucas_ac_cn/_layouts/15/onedrive.aspx?id=%2Fpersonal%2Fzhaoyuzhong20%5Fmails%5Fucas%5Fac%5Fcn%2FDocuments%2FControlCap&view=0) |
+| Pre-trained ControlCap weights and logs (Optional) | `mv <your_path>/ckpts/* ckpts/` | [OneDrive](https://mailsucasaccn-my.sharepoint.com/personal/zhaoyuzhong20_mails_ucas_ac_cn/_layouts/15/onedrive.aspx?id=%2Fpersonal%2Fzhaoyuzhong20%5Fmails%5Fucas%5Fac%5Fcn%2FDocuments%2FControlCap&view=0) |
  
 
 To train and evaluate ControlCap, download the files in the table and arrange the files according to the file tree below. (Uploading)
