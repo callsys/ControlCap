@@ -35,7 +35,7 @@ To train and evaluate ControlCap, download the files in the table and arrange th
       |--train.py
       |--eval.py
 ```
-P.S. The annotations are converted using `data.sh`, the original annotations are as follows:
+P.S. The converted annotations are generated using `data.sh`, the original annotations are as follows:
 
 1. [annotations](https://homes.cs.washington.edu/~ranjay/visualgenome/api.html) of Visual Genome for dense captioning.
 
