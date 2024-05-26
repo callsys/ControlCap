@@ -12,6 +12,10 @@ from lavis.runners import RunnerBase
 
 @registry.register_runner("controlcap")
 class ControlCapRunner(RunnerBase):
+    def __init__(self, cfg, task, model, datasets, job_id):
+        super().__init__(cfg, task, model, datasets, job_id)
+        self.task.output_dir = self.output_dir
+
     @property
     def optimizer(self):
         # TODO make optimizer class and configurations
