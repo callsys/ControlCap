@@ -17,7 +17,7 @@ from pycocoevalcap.eval import COCOEvalCap
 import lavis.common.dist_utils as dist_utils
 from lavis.common.logger import MetricLogger, SmoothedValue
 from lavis.common.registry import registry
-from lavis.common.dist_utils import get_rank, get_world_size, is_main_process, is_dist_avail_and_initialized
+from lavis.common.dist_utils import get_rank, get_world_size, is_main_process, is_dist_avail_and_initialized, main_process
 from lavis.datasets.data_utils import prepare_sample
 from lavis.tasks.base_task import BaseTask
 from controlcap.common.evaluation.eval_densecap import DenseCapEvaluator
@@ -131,6 +131,18 @@ class ControlCapTask(BaseTask):
             metric_logger.update(loss_llm=loss_llm)
             metric_logger.update(loss_tag=loss_tag)
             metric_logger.update(lr=optimizer.param_groups[0]["lr"])
+            if i % log_freq == 0:
+                # metric_logger.synchronize_between_processes()
+                state = dict()
+                state['epoch'] = inner_epoch
+                state['iter'] = '%.4d' % i
+                state['lr'] = '%.6f' % optimizer.param_groups[0]["lr"]
+                state['loss'] = '%.4f' % loss_all.cpu().item()
+                state['loss_llm'] = '%.4f' % loss_llm.cpu().item()
+                state['loss_tag'] = '%.4f' % loss_tag.cpu().item()
+                # for k, meter in metric_logger.meters.items():
+                #     state[k] = "{:.3f}".format(meter.global_avg)
+                self.log_stats(state)
 
         # after train_epoch()
         # gather the stats from all processes
@@ -471,4 +483,13 @@ class ControlCapTask(BaseTask):
         logging.info(f":Metrics ({str(metrics)}).")
         metrics["agg_metrics"] = metrics["METEOR"]
         return metrics
+
+    @main_process
+    def log_stats(self, stats, split_name='train'):
+        if isinstance(stats, dict):
+            log_stats = {**{f"{split_name}_{k}": v for k, v in stats.items()}}
+            with open(os.path.join(self.output_dir, "log.txt"), "a") as f:
+                f.write(json.dumps(log_stats) + "\n")
+        elif isinstance(stats, list):
+            pass
 
