@@ -69,6 +69,10 @@ class ControlCapT5(Blip2T5):
             nn.Linear(self.visual_encoder.embed_dim * 2, self.visual_encoder.embed_dim),
             nn.ReLU(),
             nn.Linear(self.visual_encoder.embed_dim, self.visual_encoder.embed_dim))
+        self.cvem_tag_mlp = nn.Sequential(
+            nn.Linear(self.visual_encoder.embed_dim * 2, self.visual_encoder.embed_dim),
+            nn.ReLU(),
+            nn.Linear(self.visual_encoder.embed_dim, self.visual_encoder.embed_dim))
 
         # control embedding module
         self.cem_memory = nn.Parameter(torch.zeros(self.t5_model.model_dim))
@@ -84,17 +88,9 @@ class ControlCapT5(Blip2T5):
         self.ebm_vl2cl_ca = CrossAttnBlock(num_heads=ebm_num_heads, hidden_dim=ebm_dim, mlp_dim=ebm_dim)
 
         # region tagging head
-        embed_dim = 256
-        self.cvem_tag_mlp = nn.Sequential(
-            nn.Linear(self.visual_encoder.embed_dim * 2, self.visual_encoder.embed_dim),
-            nn.ReLU(),
-            nn.Linear(self.visual_encoder.embed_dim, embed_dim))
         tag_bert_config = BertConfig.from_json_file(
             kwargs.get("tag_bert_config", "controlcap/models/tagging_heads/tag_bert_config.json"))
-        # tag_bert_config.encoder_width = self.Qformer.config.encoder_width
-        tag_bert_config.encoder_width = embed_dim
-        tag_bert_config.hidden_size = embed_dim
-        tag_bert_config.intermediate_size = embed_dim * 4
+        tag_bert_config.encoder_width = self.Qformer.config.encoder_width
         self.tag_head = BertModel(config=tag_bert_config, add_pooling_layer=False)
         del self.tag_head.embeddings
         for layer in self.tag_head.encoder.layer:
@@ -267,6 +263,10 @@ class ControlCapT5(Blip2T5):
                         first_word = []
                     first_words.append(first_word)
                 tags = [fword + tag for fword, tag in zip(first_words, tags)]
+
+            controls = samples.get("controls", None)
+            if controls is not None:
+                tags = [control + tag for control, tag in zip(controls, tags)]
 
             for control_tag in tags:
                 control_tag = list(set(control_tag))
