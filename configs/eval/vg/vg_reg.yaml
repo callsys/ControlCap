@@ -4,9 +4,8 @@ base: ["configs/base/runs/eval.yaml",
 ]
 
 model:
-  tag_thr: 0.79
+  tag_thr: 0.99
   first_word_control: False
-  num_beams: 2
 
 run:
   batch_size_eval: 64
