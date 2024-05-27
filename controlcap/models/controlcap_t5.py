@@ -102,7 +102,7 @@ class ControlCapT5(Blip2T5):
         self.num_tags = len(self.tag_list)
         self.tag_labels = nn.Embedding(self.num_tags * 2, tag_bert_config.hidden_size)
         self.tag_fc = nn.Linear(tag_bert_config.hidden_size, 1)
-        self.tag_weight = 0.01
+        self.tag_weight = 0.005
         self.tag_loss_function = AsymmetricLoss(gamma_neg=7, gamma_pos=0, clip=0.05)
 
         # Trainable parameters
