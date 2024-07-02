@@ -3,7 +3,7 @@
 # ControlCap: Controllable Region-level Captioning
 </div>
 
-This is the official implementaion of paper [***ControlCap: Controllable Region-level Captioning***](https://arxiv.org/pdf/2401.17910.pdf), which is accepted in ***ECCV 2024***.. This repository contains Pytorch training code, evaluation code, pre-trained models, and visualization method. Based on ControlCap, we build [***DynRefer***](https://github.com/callsys/DynRefer), which support mores tasks and achieves better performance.
+This is the official implementaion of paper [***ControlCap: Controllable Region-level Captioning***](https://arxiv.org/pdf/2401.17910.pdf), which is accepted in ***ECCV 2024***.. This repository contains Pytorch training code, evaluation code, pre-trained models, and visualization method. Based on ControlCap, we build [***DynRefer***](https://github.com/callsys/DynRefer), which support more tasks and achieves better performance.
 
 <div align=center>
 
