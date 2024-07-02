@@ -69,12 +69,10 @@ If you have any question about our work or this repository, please don't hesitat
 ## 7. Citation
 
 ```text
-@misc{zhao2024controlcap,
-      title={ControlCap: Controllable Region-level Captioning}, 
-      author={Yuzhong Zhao and Yue Liu and Zonghao Guo and Weijia Wu and Chen Gong and Fang Wan and Qixiang Ye},
-      year={2024},
-      eprint={2401.17910},
-      archivePrefix={arXiv},
-      primaryClass={cs.CV}
+@article{zhao2024controllable,
+  title={Controllable Dense Captioner with Multimodal Embedding Bridging},
+  author={Zhao, Yuzhong and Liu, Yue and Guo, Zonghao and Wu, Weijia and Gong, Chen and Ye, Qixiang and Wan, Fang},
+  journal={arXiv preprint arXiv:2401.17910},
+  year={2024}
 }
 ```
