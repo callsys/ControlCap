@@ -22,4 +22,4 @@ run:
   batch_size_eval: 64
   output_dir: "output/eval/vg1.2"
   eval_dataset_name: "vg_reg"
-  load_ckpt_path: "/Workspace/ZhaoYuzhong/ControlCap/output/train/vg_refcocog_5e/20240316102/checkpoint_4.pth"
+  load_ckpt_path: "ckpts/vg1.2_refcocog_5e.pth"
